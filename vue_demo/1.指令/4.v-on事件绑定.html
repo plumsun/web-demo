@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- 可以在事件中直接写js片段 -->
+        <button v-on:click="num++" >点赞</button>
+        <!-- 事件指定一个回调函数，必须是vue实例中定义的函数 -->
+        <!-- v-on可以简写为@ -->
+        <button @click="cancle" >取消点赞</button>
+        <h1>
+            点赞数{{num}}
+        </h1>
+
+        <!-- 事件修饰符 -->
+        <!-- 
+            once:只执行一次
+            stop:阻止事件冒泡到父元素
+            prevent:阻止默认事件发生
+            capture:使用事件捕获模式
+            self:只有元素自身触发事件才执行（冒泡和捕获的都不执行）
+        -->
+        <div style="border: 1px solid red;padding: 20px;" v-on:click.="hello">
+            大div
+            <div style="border: 1px solid blue;padding: 20px;" v-on:click.once="hello">
+                小div
+                <a href="http://www.baidu.com">百度</a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                num:1
+            },
+            methods: {
+                cancle(){
+                    this.num--;
+                },
+                hello(){
+                    alert("hello");
+                }   
+            }
+        })
+    </script>
+    
+</body>
+</html>

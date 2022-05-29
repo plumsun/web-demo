@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Vue -->
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- 1.v-bind给HTML标签属性绑定值，绑定超链接属性值 -->
+        <a v-bind:href="link">jiu</a>
+
+        <!-- 动态为标签属性赋值 -->
+        <span v-bind:class="{active:isAvtive,'text-danger':isText}">你好</span>
+
+    </div>
+
+    <script>
+
+        new Vue({
+            el:"#app",
+            data:{
+                link:"http://www.baidu.com",
+                isAvtive:true,
+                isText:false
+            }
+        })
+        
+    </script>
+
+
+
+</body>
+</html>

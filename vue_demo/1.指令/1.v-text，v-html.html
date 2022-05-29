@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Vue -->
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- 使用差值表达式，会出现差值闪错的情况 -->
+        {{msg}} <br>
+        <!-- 单向绑定，为标签赋值 -->
+        <span v-html="msg"></span>
+        <span v-text="msg"></span>
+    </div>
+
+
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                msg:"<h1>66666</h1>"
+            },
+            methods: {
+
+            },
+        })
+    </script>
+
+</body>
+
+</html>

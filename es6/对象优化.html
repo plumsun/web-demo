@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const person = {
+            name: "jack",
+            age: 21,
+            language: ['java', 'js', 'css']
+        }
+        console.log(Object.keys(person)); //["name","age","language"]
+        console.log(Object.values(person)); //["jack",21,['java','js','css']]
+        console.log(Object.entries(person)); //['name', 'jack'],['age', 21],['language', Array(3)]
+
+        const source1 = { name: "test" };
+        const source2 = { age: 21 };
+        const source3 = { pass: 123456 };
+
+        // 将数据封装到一起
+        Object.assign(source1, source2, source3);
+        console.log(source1);
+        console.log(source3);
+        console.log(source2);
+
+        // 2.对象简写
+        const age = 23;
+        const name = "张三";
+
+        const person2 = { age, name };
+        console.log(person2);
+
+        // 3.对象的函数属性简写
+        let person3 = {
+            name: "jack",
+            eat: function (food) {
+                console.log(this.name + "在吃" + food);
+            },
+
+            // 箭头函数声明属性不能使用this关键字
+            eat1: food => console.log(/*this*/person3.name + "在吃" + food)
+        }
+
+        person3.eat("水果");
+        person3.eat1("蔬菜");
+
+        // 4.对象扩展符
+        // 扩展运算符(...)用于取出参数对象所有可遍历属性然后拷贝当前对象
+
+        // 1.拷贝对象
+        let person_test = { name: "TEST", age: 15 };
+        let someone = { ...person_test };
+        console.log(someone);
+        // 2.合并对象
+        let age_demo = { age: 30 };
+        let name_demo = { name: "demo" };
+        // 若两个字段名重复,后面会覆盖前面
+        let person_demo = { ...name_demo, ...age_demo };
+        console.log(person_demo);
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

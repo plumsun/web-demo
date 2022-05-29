@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 数组新增了map和reduce方法
+        // 1.map()：接收一个函数，将原数组中的所有元素用这个函数处理后放入新数组返回
+        let arr = ["1", "2", "3", "4"];
+        // 如果进行加法运算会发生字符串拼接，若是* / -则不会，而是进行正常的运算处理
+        arr = arr.map(i => i * 2);
+        console.log(arr);
+
+
+        // 2.reduce()方法，为数组中的每一个元素依次执行回调函数，不包括数组中被删除的或从未被赋值的元素
+        // arr.reduce(callback,[initialValue])
+
+        // 1.previousValue(上一次调用回调返回的值，或者是提供的初始值initialValue)
+        // 2.currentValue(数组中当前被处理的元素)
+        // 3.index(当前元素在数组中的索引)
+        // array(调用reduce的数组)
+        let result = arr.reduce((frist, end) => {
+            console.log("frist" + frist);
+            console.log("end" + end);
+            return frist + end;
+        });
+        console.log(result);
+        
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

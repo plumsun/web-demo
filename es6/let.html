@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        {
+            // let声明变量有严格局部作用域
+            let b =2;
+            // var声明的变量往往会越域
+            var a =1;
+        }
+        // console.log(a); //1
+        // console.log(b); //Uncaught ReferenceError: b is not defined
+
+        // var声明的变量可以声明多次
+        var num = 1;
+        var num = 100;
+        
+        console.log(num);
+        
+        // let声明的变量只能声明一次
+        let num2 = 2;
+        // let num2 = 3;
+        // console.log(num2); //Uncaught SyntaxError: Identifier 'num2' has already been declared
+
+        // var会变量提升
+        console.log(x); // undefined
+        var x = 100;
+        
+        // let不存在变量提升
+        console.log(y); // Uncaught ReferenceError: Cannot access 'y' before initialization
+        let y = 200;
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // 字符串模板通过``即可声明字符串
+        let ss = `<div>hello</div>`;
+
+        // 字符串模板中能够插入变量和表达式。变量名写在${}中，${}中可以放入js表达式
+        function fun() {
+            return "这是一个函数";
+        }
+
+        let name = "test";
+        let age = 21;
+        let info = `我是${name},今年${age + 10},${fun()}`;
+        console.log(info);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

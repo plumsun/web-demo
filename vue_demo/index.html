@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Vue -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="hello">
+        <input type="text" v-model="num">
+        <button v-on:click="num++">登录</button>
+        <button v-on:click="cancle"></button>
+        <h1>{{name}},{{num}}</h1>
+    </div>
+
+    <script>
+        let demo = new Vue({
+            // Element元素,#id
+            el: "#hello",
+            data: {
+                name: "张三",
+                num: 1
+            },
+            methods: {
+                cancle(){
+                    this.num--;
+                }
+            },
+        });
+
+        // 1.v-model双向绑定，模型和视图进行绑定，一方改变另一方随之变化
+
+        // 2.v-on事件绑定，事件处理
+
+        // 3.声明方法做复杂的操作
+
+
+
+    </script>
+</body>
+
+</html>

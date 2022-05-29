@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.函数参数默认值
+        // 变通写法
+        function add(a, b) {
+            b = b || 1; //判断b是否为空，为空就给默认值1
+            return a + b;
+        }
+        console.log(add(10));
+        // 给参数添加默认值，若是这个参数没有传参会自动使用默认值
+        function add2(a, b = 10) {
+            return a + b;
+        }
+        console.log(add2(12));
+
+
+
+        // 2.不定参数
+        function fun(...values) {
+            console.log(values.length)
+        }
+        fun(1, 23, 3, 5, 5);
+        fun(1, 2)
+
+
+        // 3.箭头函数
+        function print(obj) {
+            console.log(obj);
+        }
+        print("hello");
+
+        // 单参箭头函数,参数可以暴露
+        var print1 = obj => console.log(obj);
+        print1("hello 箭头");
+        // 多参箭头函数，需要使用括号将参数包裹
+        var add3 = (a, b) => console.log(a + b);
+        add3(11, 12);
+
+        // 解构+箭头函数
+        const person = {
+            name: "test",
+            age: 20
+        }
+        var hello = ({ name, age }) => console.log("hello 我叫" + name + ",今年" + age);
+        hello(person);
+
+
+
+    </script>
+
+
+</body>
+
+</html>
