@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+
+<body>
+
+    <form action="../hello-word.html" method="get" name="register">
+        <table align="center" cellpadding="10px" cellspacing="0px" width="300">
+            <th>
+                <h3>注册页面</h3>
+            </th>
+            <tr>
+                <td>
+                    <label for="username">用户名</label>
+                </td>
+                <td>
+                    <input type="text" id="username" name="username" value="请输入用户名">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">密码</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" value="请输入密码">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>性别</span>
+                </td>
+                <td>
+                    <label for="man">男</label>
+                    <input type="radio" id="man" name="sex" value="man" checked>
+                    <label for="woman">女</label>
+                    <input type="radio" id="woman" name="sex" value="woman">
+                    <label for="null">未知</label>
+                    <input type="radio" id="null" name="sex" value="null">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="addr">籍贯</label>
+                </td>
+                <td>
+                    <select name="addr" id="addr">
+                        <option value="yu" selected>河南</option>
+                        <option value="jing">北京</option>
+                        <option value="shang">上海</option>
+                        <option value="guang">广州</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="确认注册">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

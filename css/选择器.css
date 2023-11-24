@@ -1,0 +1,28 @@
+/* 标签选择器 */
+p {
+    color: red;
+}
+/* 类选择器 */
+.test {
+    color: blue;
+}
+/* id 选择器 */
+#text {
+    color: chocolate;
+}
+
+/* 属性选择器 */
+/* 匹配 type 属性为 password 的 input 标签 */
+input[type="password"] {
+    color: red;
+}
+/* 匹配 type 属性为多个值其中带有特定的值的 span 标签*/
+span[class~="test2"] {
+    font-size: 20%;
+}
+span[class|="test3"] {
+    font-size: 20%;
+    font-weight: normal;
+}
+
+/* 字符串选择器 */
