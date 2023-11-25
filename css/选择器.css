@@ -26,3 +26,20 @@ span[class|="test3"] {
 }
 
 /* 字符串选择器 */
+
+
+
+
+
+/* 快捷键 */
+div {
+    /* w100 自动生成宽度属性并赋值为 100px */
+    width: 100px;
+    /* h100 自动生成高度属性并赋值为 100px */
+    height: 200px;
+    /* tac 自动水平居中 */
+    text-align: center;
+    /* ti 自动生成缩进属性 */
+    text-indent: 10em;
+}
+

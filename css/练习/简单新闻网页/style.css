@@ -1,0 +1,36 @@
+h1 {
+    font-size: 1000;
+    font-weight: 400;
+    text-align: center;
+}
+table > p {
+    color: rgb(155, 152, 158);
+}
+input[type="text"]{
+    color: rgb(155, 152, 158);
+}
+
+input[type="submit"]:hover {
+    color: rgb(155, 152, 158);
+}
+
+p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+/* img 图像不能直接改变居中方式，可以将其放入盒子中，对外层盒子进行水平居中处理 */
+div {
+    text-align: center;
+}
+/* 选择 p 标签中的 a 标签进行属性设置 */
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: darkorange;
+}
+/* 选择 body 标签中最后一个 p 标签 */
+body p:last-child {
+    font-size: 12px;
+    color: rgb(155, 152, 158);
+}
