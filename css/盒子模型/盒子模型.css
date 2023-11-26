@@ -1,0 +1,10 @@
+div {
+    width: 100px;
+    height: 200px;
+    /* 边框粗细 */
+    border-width: 10px;
+    /* 边框颜色 */
+    border-color: red;
+    /* 边框样式 */
+    border-style: dashed;
+}

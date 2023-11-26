@@ -1,0 +1,24 @@
+div{
+    height: 50px;
+    width: 780px;
+    border-style: solid;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: 5px orange solid;
+    border-bottom-color: rgba(169, 169, 169, 0.1);
+}
+div>a{
+    color: black;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    line-height: 60px;
+    background: transparent no-repeat fixed;
+    padding-left: 40px;
+    padding-right: 40px;;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #eee;
+    color: orange;
+}

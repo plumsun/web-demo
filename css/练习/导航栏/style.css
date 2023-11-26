@@ -1,0 +1,23 @@
+
+a {
+    display: inline-block;
+    width: 120px;
+    height: 58px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: aliceblue;
+}
+a[id="1"] {
+    background: url(images/bg1.png) no-repeat;
+}
+a[id="2"] {
+    background: url(images/bg2.png) no-repeat;
+}
+a[id="3"] {
+    background: url(images/bg3.jpg) no-repeat;
+}
+a[id="4"] {
+    background: url(images/bg4.png) no-repeat;
+}
+

@@ -1,0 +1,11 @@
+div {
+    display: inline;
+    height: 300px;
+    width: 300px;
+}
+table{
+    background: rgba(169, 169, 169, 0.2);
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
