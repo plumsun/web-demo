@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+div{
+    border: 0.5px solid #b0b0b0;
+}
+
+
+.box {
+    border-radius: 15px;
+    margin: 100px auto;
+    width: 250px;
+}
+.box:hover{
+    box-shadow: 5px 5px 20px 6px #b0b0b0;
+}
+.head{
+    border-radius: 15px 15px 0% 0%;
+    height: 30px;
+    border-bottom: dotted 1px #ccc;
+}
+.head span{
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.head span:hover {
+    text-shadow: 5px 3px 6px rgba(0, 0, 0,.3);
+}
+.info{
+    border-radius: 0% 0% 15px 15px;
+    border-top: 0.5px solid transparent;
+    
+}
+.info dl{
+    font-size: 14px;
+    margin: 5px 15px 5px 10px;
+}
+dd{
+    padding: 3px 0px 5px 0px;
+}
+.info dl dd a {
+    color: #666666;
+}

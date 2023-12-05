@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.head {
+    height: 50px;
+    background-color: #333333;
+}
+
+.select {
+    background-image: url(images/c6d9c2f8205e85cf57678b00380cd974.png);
+        background-repeat: no-repeat;
+        background-size: 1230px 460px;
+    height: 460px;
+    width: 1230px;
+    margin: 50px auto;
+}
+
+
+
+.select .select_dl {
+    float: left;
+}
+
+dd > a {
+    width: 170px;
+    color: aliceblue;
+    background-color: #514f4f;
+    display: block;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+dd > a:hover {
+    background-color: orangered;
+    font-size: 20px;
+}
+.select .select_img {
+    height: 460px;
+    width: 1240px;
+}
+#box {
+    margin: 0 auto;
+    height: 614px;
+    width: 1230px;
+}
+
+#box .left {
+    float: left;
+}
+
+#box .right {
+    float: left;
+    width: 996px;
+}
+.left a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+
+.right a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+.left a:hover {
+    box-shadow: 1px 1px 30px 1px #333333;
+}
+
+.right a:hover{
+    box-shadow: 1px 1px 30px 1px #333333;
+}
+
+.right .one {
+    height: 300px;
+    margin-bottom: 13px;
+}
+
+.right .two {
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+.right .one li{
+    float: left;
+    width: 235px;
+    height: 300px;
+    margin-left: 14px;
+}
+.right .two li {
+    float: left;
+    width: 235px;
+    height: 300px;
+    margin-left: 14px;
+}
+.right {
+    font: 14px/1.5 Helvetica Neue,
+        Helvetica,
+        Arial,
+        Microsoft Yahei,
+        Hiragino Sans GB,
+        Heiti SC,
+        WenQuanYi Micro Hei,
+        sans-serif;
+    text-align: center;
+}
+
+.right .preview {
+    color: #d6d6d6;
+}
+
+.right .price {
+margin-top: 12px;
+   color: #ff8431;
+   text-align: center;
+}
+
+.right .img {
+    margin: 0 auto 18px;
+    height: 160px;
+    width: 160px;
+}
+.right img {
+    margin: 0 auto;
+    height: 160px;
+    width: 160px;
+}
