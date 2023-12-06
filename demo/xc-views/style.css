@@ -13,14 +13,11 @@ li {
     list-style: none;
 }
 
-body{
-    margin: 0 auto;
-    width: 1200px;
-}
-
 .head{
     padding: 20px 0;
     height: 42px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -89,7 +86,7 @@ body{
     margin: 6px 30px;
 }
 
-.user_info img {
+.user_info .image {
     float: left;
     border-radius: 15px;
 }
@@ -97,6 +94,7 @@ body{
 .user_info p {
     float: left;
     padding: 0 5px;
+    font-size: 14px;
     line-height: 30px;
     color: #696969;
 }
@@ -105,7 +103,197 @@ body{
     color: #00a4ff;
 }
 
-.info{
-    height: 490px;
-    background-color: skyblue;
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .info {
+    margin: 0 auto;
+    width: 1200px;
+    height: 420px;
+    background: url(images/banner2.png) no-repeat top center;
+}
+
+.info .select {
+    float: left;
+    width: 190px;
+    height: 420px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, .3);
+}
+.info .select li {
+    float: left;
+    padding: 10px 0;
+    margin: 3px 0;
+}
+
+.info .select li>a {
+    float: left;
+    color: aliceblue;
+    width: 150px;
+    padding: 0 20px 0 20px;
+}
+
+.info .select li>a>span {
+    float: right;
+}
+
+.info .select li>a:hover {
+    color: #00a4ff;
+}
+
+.info .source {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: aliceblue;
+    margin: 60px 0;
+}
+
+.source .source_head {
+    background-color: #9bceea;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.source .source_head span {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.source .source_list {
+    margin: 0 auto;
+    height: 195px;
+    width: 190px;
+}
+
+.source .source_list li {
+    height: 62px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.source .source_list li .text-one {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #050505;
+}
+.source .source_list li .text-two {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #b0b0b0;
+}
+
+.source .all_source {
+    height: 55px;
+}
+
+.source .all_source a {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin: 0 15px;
+    border: 2px solid #00a4ff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00a4ff;
+}
+.source .all_source a span {
+    line-height: 40px;
+}
+.recommend {
+    height: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.recommend ul li {
+    float: left;
+    margin: 12px auto;
+    border-right: 1px solid black;
+}
+
+.recommend ul li span {
+    float: left;
+    padding: 0 20px;
+}
+
+.recommend ul li:last-child {
+    border-right: none;
+}
+
+.recommend ul li a:hover {
+        color: #00a4ff;
+}
+
+.recommend .recommend_ext a {
+    float: right;
+    margin: 12px auto;
+    padding: 0 20px;
+    color: #00a4ff;
+    font-size: 14px;
+}
+
+.column {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.column>div {
+    float: left;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.column>div .name {
+    margin-top: 35px;
+    height: 42px;
+}
+
+.column>div .name .column_name {
+    float: left;
+}
+
+.column>div .name .level {
+    display: inline-block;
+    width: 1000px;
+    font-size: 16px;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+.column>div .name .level a {
+    padding: 0 50px;
+}
+
+.column>div .name .level a:hover {
+    color: #00a4ff;
+}
+
+.column>div .name .all{
+    float: right;
+    padding-right: 20px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.column>div .data li {
+    float: left;
+    width: 230px;
+    height: 270px;
+    margin-left: 12.5px;
+    margin-top: 10px;
+    background-color: blue;
+}
+
+.column>div .data li img {
+    border: 0;
+}
+
+.column>div .data li:first-child {
+    margin-left: 0;
 }
