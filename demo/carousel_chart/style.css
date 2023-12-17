@@ -15,7 +15,6 @@ li {
     position: relative;
     width: 520px;
     height: 280px;
-    
     margin: 100px auto;
 }
 .left{
@@ -66,4 +65,28 @@ li {
 }
 .carousel li:first-child {
     background-color: #ff8431;
+}
+
+.load {
+    display: none;
+    position: absolute;
+    width: 520px;
+    height: 280px;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.load a {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff8431;
+}
+
+.carousel:hover .load {
+    display: block;
 }

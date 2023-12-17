@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        position: relative;
+        width: 100px;
+        height: 200px;
+        background-color: blue;
+    }
+
+    .two {
+        position: absolute;
+        bottom: 100%;
+        left: 10px;
+        /* 兼容性 */
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        border: 5px solid transparent;
+        border-bottom-color: blue;
+    }
+
+    .level {
+        width: 0;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+        border-right: 50px solid blue;
+        border-top: 50px solid orange;
+        border-bottom: 50px solid red;
+        border-left: 50px solid green;
+    }
+</style>
+
+<body>
+    <div class="one">
+        <div class="two">
+
+        </div>
+    </div>
+    <div class="level">
+
+    </div>
+
+</body>
+
+</html>
