@@ -1,0 +1,64 @@
+/* 浏览器默认内外边距初始化为 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 防止斜体标签倾斜 */
+em,
+i {
+    font-style: normal;
+}
+/* 去除列表序号 */
+li {
+    list-style: none;
+}
+/* 去除图片边框和将图片改为中线水平对齐，防止图片和盒子出现缝隙 */
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/* 改变按钮鼠标样式为小手 */
+button {
+    cursor: pointer;
+}
+/* 去除链接标签下划线 */
+a {
+    color: #666;
+    text-decoration: none;
+}
+/* 改变链接标签经过时的颜色 */
+a:hover {
+    color: #c81623;
+}
+/* 改变按钮和表单元素中 文字字体样式 */
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+body {
+    /* 抗锯齿性，防止文字放大后出现毛边 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    /* \5B8B\4F53 宋体，采用Unicode防止css解析中文时出现乱码 */
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+/*  */
+.hide,
+.none {
+    display: none;
+}
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
