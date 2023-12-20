@@ -1,0 +1,11 @@
+项目结构介绍
+
+images/: 样式类图片文件夹
+css/: 样式文件夹
+script: JavaScript脚本文件夹
+fonts: 字体类文件夹
+upload_img/: 产品类图品文件夹
+
+index.html: 首页
+base.css: 初始化样式文件
+common.css: 公共样式文件
