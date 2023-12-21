@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon-v1.0/fonts/icomoon.eot?2ytwfs');
+    src: url('../fonts/icomoon-v1.0/fonts/icomoon.eot?2ytwfs#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon-v1.0/fonts/icomoon.ttf?2ytwfs') format('truetype'),
+        url('../fonts/icomoon-v1.0/fonts/icomoon.woff?2ytwfs') format('woff'),
+        url('../fonts/icomoon-v1.0/fonts/icomoon.svg?2ytwfs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.font_color_red {
+    color: #c81623;
+}
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.area .shortcut_left {
+    float: left;
+    width: 200px;
+}
+.area .shortcut_right {
+    float: right;
+}
+
+.shortcut_right ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    margin: 9px 10px 0 10px;
+    background-color: black;
+}
+.shortcut_font_icon::after {
+    padding-left: 3px;
+    content: '\e901';
+    font-family: "icomoon";
+}
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.header .logo{
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    font-size: 0;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.header .search_hotwords {
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #c81623;
+}
+
+.search_hotwords .search {
+    height: 100%;
+}
+
+.search input {
+    height: 100%;
+    outline: none;
+}
+.search input[type=search] {
+    float: left;
+    width: 484px;
+}
+.search input[type=button] {
+    float: right;
+    width: 50px;
+    color: #f1f1f1;
+    font-size: 12px;
+    background-color: #b1191a;
+}
+
+.search_hotwords .hotwords {
+    height: 40px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.hotwords ul li {
+    margin: 0 10px;
+    float: left;
+}
+
+.header .shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+}
+
+.shopcar a::before {
+    margin: 0 10px;
+    content: '\e93a';
+    color: #b1191a;
+    font-family: "icomoon";
+}
+
+.shopcar a::after {
+    margin: 0 10px;
+    content: '\e903';
+    font-size: 10px;
+    font-family: "icomoon";
+}
+
+.shopcar .count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    padding: 0 5px;
+    height: 14px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 14px;
+    color: #f7f7f7;
+    border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+    height: 46px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.dropdown .dt {
+    text-align: center;
+    line-height: 45px;
+    color: #f7f7f7;
+    font-size: 14px;
+}
+
+
+.dropdown .dd {
+    visibility: hidden;
+    margin-top: 1px;
+    background-color: #b5b5b5;
+}
+
+.dropdown:hover .dd{
+    visibility: visible;
+}
+
+.dd ul li {
+    padding: 20px;
+    line-height: 100%;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.nav .navitems {
+    float: left;
+    width: 990px;
+    height: 45px;
+}

@@ -24,7 +24,8 @@ img {
 }
 
 /* 改变按钮鼠标样式为小手 */
-button {
+button,
+input[type=button] {
     cursor: pointer;
 }
 
@@ -43,6 +44,7 @@ a:hover {
 button,
 input {
     font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
 }
 
 body {
@@ -71,4 +73,9 @@ body {
 
 .clearfix {
     *zoom: 1;
+}
+
+
+input[type=search] {
+    padding-left: 10px;
 }
