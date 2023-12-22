@@ -42,6 +42,7 @@
     margin: 9px 10px 0 10px;
     background-color: black;
 }
+
 .shortcut_font_icon::after {
     padding-left: 3px;
     content: '\e901';
@@ -103,8 +104,11 @@
 }
 
 .hotwords ul li {
-    margin: 0 10px;
     float: left;
+}
+
+.hotwords ul li a {
+    padding: 0 10px;
 }
 
 .header .shopcar {
@@ -158,7 +162,7 @@
     background-color: #b1191a;
 }
 
-.dropdown .dt {
+.dropdown .dt{
     text-align: center;
     line-height: 45px;
     color: #f7f7f7;
@@ -167,9 +171,11 @@
 
 
 .dropdown .dd {
+    position: relative;
     visibility: hidden;
+    height: 465px;
     margin-top: 1px;
-    background-color: #b5b5b5;
+    background-color: #c81623;
 }
 
 .dropdown:hover .dd{
@@ -177,14 +183,118 @@
 }
 
 .dd ul li {
-    padding: 20px;
-    line-height: 100%;
-    background-color: #f1f1f1;
+    height: 31px;
+    margin-left: 1px;
+    line-height: 31px;
+    color: #f1f1f1;
     border-bottom: 1px solid #dfdfdf;
 }
 
-.nav .navitems {
+.dd ul li a {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+.dd ul li a::after {
+    position: absolute;
+    right: 10px;
+    line-height: 31px;
+    content: '\e903';
+    font-size: 10px;
+    font-family: "icomoon";
+}
+
+.dd ul li:hover,
+.dd ul li:hover a {
+    color: #c81623;
+    background-color: #f1f1f1;
+}
+
+.navitems {
     float: left;
-    width: 990px;
+    padding-left: 20px;
     height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+.navitems li {
+    float: left;
+}
+
+.navitems li a {
+    padding: 0 25px;
+}
+
+.footer {
+    height: 400px;
+    padding-top: 30px;
+}
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.mod_service ul {
+    height: 50px;
+}
+
+.mod_service li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+}
+
+.mod_service h5 {
+    float: left;
+    width: 50px;
+    margin-right: 8px;
+    line-height: 50px;
+    font-size: 0;
+    background: url(../images/icons.png) no-repeat; 
+}
+.service_text {
+    margin-top: 5px;
+}
+
+.service_text h4 {
+    font-size: 14px;
+}
+.service_text p {
+    font-size: 12px;
+}
+
+.mod_service .service_bg_one {
+    background-position: -253px -3px;
+}
+.mod_service .service_bg_two {
+    background-position: -254px -54px;
+}
+.mod_service .service_bg_three {
+    background-position: -256px -106px;
+}
+.mod_service .service_bg_four {
+    background-position: -257px -156px;
+}
+.mod_service .service_bg_five {
+    background-position: -255px -209px;
+}
+
+.mod_help {
+    margin-top: 10px;
+    height: 200px;
+}
+
+.mod_help dl {
+    float: left;
+    text-align: left;
+    width: 200px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.mod_help dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
