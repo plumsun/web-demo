@@ -1,0 +1,73 @@
+.main {
+    margin-left: 220px;
+    width: 980px;
+    height: 465px;
+    padding-top: 10px;
+}
+
+.main .focus {
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+.main .news_flash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+.news_flash .news {
+    height: 165px;
+    margin-bottom: -1px;
+}
+.news li {
+    height: 24px;
+    line-height: 24px;
+    margin-top: -1px;
+    padding-left: 10px;
+}
+.news li:first-child {
+    height: 33px;
+    padding-left: 13px;
+    font-size: 14px;
+    line-height: 33px;
+}
+.news li:first-child a{
+    float: right;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.news li:first-child a::after {
+    padding-left: 3px;
+    content: '\e903';
+    font-family: "icomoon";
+}
+
+.news li:last-child {
+    margin-bottom: 12px;
+}
+
+.news_flash .two {
+    height: 210px;
+    margin-bottom: 5px;
+}
+.two li {
+    float: left;
+    height: 70px;
+    width: 62px;
+    text-align: center;
+}
+
+.two li .bg {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/icons.png) no-repeat;
+}
+
+.two li .news_one {
+    background-position: -17px -15px;
+}

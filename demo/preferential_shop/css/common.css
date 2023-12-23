@@ -281,20 +281,43 @@
 }
 
 .mod_help {
-    margin-top: 10px;
-    height: 200px;
+    margin-top: 20px;
+    height: 185px;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .mod_help dl {
     float: left;
     text-align: left;
     width: 200px;
-    padding-left: 30px;
     font-size: 12px;
 }
 
 .mod_help dl dt {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+
+.mod_help dl:first-child {
+    margin-left: 35px;
+}
+
+
+.mod_help dl:last-child{
+    padding-left: 0;
+    width: 90px;
+    text-align: center;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mod_copyright .links {
+    padding-bottom: 15px;
+}
+.links a {
+    margin: 0 2px;
 }
