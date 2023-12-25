@@ -19,18 +19,20 @@
 .news_flash .news {
     height: 165px;
     margin-bottom: -1px;
+    border: 1px solid #e5e5e5;
 }
 .news li {
     height: 24px;
+    margin-top: 2px;
+    padding-left: 15px;
     line-height: 24px;
-    margin-top: -1px;
-    padding-left: 10px;
 }
 .news li:first-child {
     height: 33px;
-    padding-left: 13px;
     font-size: 14px;
+    margin-top:0;
     line-height: 33px;
+    border-bottom: 1px dashed #e5e5e5;
 }
 .news li:first-child a{
     float: right;
@@ -48,18 +50,29 @@
     margin-bottom: 12px;
 }
 
-.news_flash .two {
-    height: 210px;
+.news_flash .lifeservice {
+    height: 209px;
+    overflow: hidden;
     margin-bottom: 5px;
-}
-.two li {
-    float: left;
-    height: 70px;
-    width: 62px;
-    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
 }
 
-.two li .bg {
+.lifeservice ul {
+    width: 270px;
+}
+
+.lifeservice li {
+    float: left;
+    height: 70px;
+    width: 63px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-left: 0;
+    border-top: 0;
+}
+
+.lifeservice li .bg {
     float: left;
     margin-top: 15px;
     margin-left: 20px;
@@ -68,6 +81,36 @@
     background: url(../images/icons.png) no-repeat;
 }
 
-.two li .news_one {
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
+    background-position: -17px -15px;
+}
+.lifeservice li .news_one {
     background-position: -17px -15px;
 }
