@@ -172,7 +172,8 @@
 
 .dropdown .dd {
     position: relative;
-    visibility: hidden;
+    /* 选择栏隐藏 */
+    visibility: visible;
     height: 465px;
     margin-top: 1px;
     background-color: #c81623;
