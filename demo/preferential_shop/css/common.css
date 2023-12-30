@@ -228,12 +228,14 @@
 }
 
 .footer {
-    height: 400px;
+    height: 420px;
+    margin-top: 30px;
     padding-top: 30px;
+    background-color: #f5f5f5;
 }
 .footer .mod_service {
     height: 80px;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e5e5e5;
 }
 .mod_service ul {
     height: 50px;
@@ -282,9 +284,9 @@
 }
 
 .mod_help {
-    margin-top: 20px;
+    padding: 20px 0;
     height: 185px;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .mod_help dl {

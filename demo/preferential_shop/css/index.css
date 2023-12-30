@@ -154,8 +154,8 @@
 }
 .recom_bd ul li img {
     width: 248px;
-        height: 163px;
-    }
+    height: 163px;
+}
 
 .recom_bd ul li:nth-child(-n+3):after {
     position: absolute;
@@ -193,81 +193,284 @@
     background-color: #c81623;
 }
 
+.like {
+    margin-top: 15px;
+    height: 292px;
+}
+
+.like .like_text {
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.like_text a {
+    float: right;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+.like_text a::after {
+    content: "\e984";
+    padding-left: 10px;
+    font-family: "icomoon";
+}
+
+
+.like .like_media {
+    height: 242px;
+    border: 1px solid #e5e5e5;
+}
+
+.like_media ul li {
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+
+.like_media ul li img {
+    padding: 10px 0;
+}
+
+.like_media ul li .text {
+    padding: 5px 35px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.like_media ul li:last-child {
+    width: 198px;
+}
+
+.like_media ul li:last-child .text {
+    border-right: none;
+}
+
+
+.text h3 {
+    text-align: left;
+    color: #df3033;
+}
+
+
+.interesting {
+    margin-top: 20px;
+    height: 446px;
+}
+
+
+.interesting .interesting_text {
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.interesting .interesting_media {
+    height: 406px;
+    border: 1px solid #e5e5e5;
+}
+
+.interesting_media .book {
+    width: 399px;
+    float: left;
+    overflow: hidden;
+}
+
+.interesting_media .great {
+    float: left;
+    width: 226px;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+}
+
+.great ul li:first-child {
+    border-bottom: none;
+}
+
+.great h3 {
+    width: 190px;
+    height: 40px;
+    margin: 0 17px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.great .one {
+    height: 40px;
+    margin-top:0;
+    margin-left: 0;
+}
+
+
+.great .two {
+    padding: 34px 0px 10px 6px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.great .three {
+    padding: 10px 0 0 7px;
+    border-bottom: none;
+}
+
+.brand_street {
+    float: left;
+    width: 402px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #e5e5e5;
+}
+
+.brand_street h3{
+    width: 360px;
+    height: 40px;
+    margin: 0 17px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.brand_street .street_one {
+    padding: 35px 0px 10px 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.brand_street .street_two {
+    height: 157px;
+}
+
+.street_two a {
+    float: left;
+    width: 200px;
+    height: 157px;
+    padding: 19px 0 0 18px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.street_two a:last-child {
+    padding-left: 20px;
+    border-right: none;
+}
+.brand_list {
+    float: right;
+    height: 100%;
+    overflow: hidden;
+}
+
+
 /* 楼层区 */
 .floor {
 }
 
-.floor>div {
-    height: 504px;
-    margin-top: 10px;
-}
-
-.floor_recom {
-    padding-top:30px;
+.box_hd {
+    padding-top:25px;
+    padding-bottom: 5px;
     height: 56px;
+    border-bottom: 3px solid #c81623;
 }
-.floor_recom span {
+.box_hd span {
     font-size: 16px;
     font-weight: 600;
     color: #c81623;
-    line-height: 26px;
+    line-height: 20px;
 }
 
-.floor_recom ul {
+.box_hd ul {
     float: right;
-    height: 26px;
+    height: 20px;
     display: inline;
     text-align: center;
 }
 
-.floor_recom ul li {
+.box_hd ul li {
     float: left;
     height: 15px;
     line-height: 26px;
     
 }
-.floor_recom ul li a {
-    padding: 0 20px;
+.box_hd ul li a {
+    padding: 0 15px;
     border-left: 1px solid black;
 }
 
-.floor_recom ul>li:first-child>a{
+.box_hd ul>li:last-child>a {
+    padding-right: 10px;
+}
+
+.box_hd ul>li:first-child>a{
     border-left: 0;
 }
 
-.floor .electrical {
-    height: 448px;
-    border-top: 3px solid #c81623;
-    background-color: #b5b5b5;
+.floor .tab_content {
+    height: 360px;
 }
 
-.electrical>div {
+.tab_content>div {
     float: left;
 }
 
-.electrical .electrical_one {
-    width: 10%;
-    background-color: blue;
-    height: 100%;
-}
-.electrical .electrical_two {
-    width: 20%;
-    background-color: green;
-    height: 100%;
-}
-.electrical .electrical_three {
-    width: 30%;
-    background-color: red;
-    height: 100%;
-}
-.electrical .electrical_four {
-    width: 20%;
-    background-color: yellow;
+.tab_content div[class^="content_"] {
+    float: left;
     height: 100%;
 }
 
-.electrical .electrical_five {
-    width: 20%;
-    background-color: orangered;
+.tab_content .content_one {
+    width: 210px;
     height: 100%;
+    background-color: #fbfbfb;
+    text-align: center;
+}
+
+.content_one .electrical_text {
+    width: 100%;
+    
+}
+
+.electrical_text ul li {
+    float: left;
+    width: 86px;
+    height: 32px;
+    text-align: center;
+    margin: 0 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.electrical_text ul li:nth-child(2n) {
+    margin-left: 0;
+}
+
+.electrical_text ul li a {
+    display: inline-block;
+    line-height: 32px;
+}
+
+.tab_content .content_two {
+    width: 330px;
+    height: 100%;
+}
+
+.content_three img {
+    display: block;
+    width: 220px;
+    height: 180px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.content_four img {
+    width: 220px;
+    height: 360px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.content_five img {
+    display: block;
+    width: 220px;
+    height: 180px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.brand {
+    margin-top: 20px;
+    height: 66px;
 }
