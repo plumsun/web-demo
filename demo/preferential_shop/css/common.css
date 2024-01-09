@@ -225,6 +225,7 @@
 
 .navitems li a {
     padding: 0 25px;
+    display: inline-block;
 }
 
 .footer {
