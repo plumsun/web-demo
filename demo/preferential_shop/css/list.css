@@ -10,23 +10,34 @@
     font-display: block;
 }
 
+a:hover{
+    color: black;
+}
+
 .sk {
     position: absolute;
     left: 190px;
     padding: 3px 0 3px 5px;
     top: 40px;
-    width: 40px;
+    width: 60px;
     height: 40px;
     border-left: 1px solid #c81623;
 }
 .sk img {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    margin-left: 5px;
+    width: 56px;
+    height: 30px;
 }
 
 .navitems ul li:nth-child(-n+3) a {
     font-size: 16px;
+}
+
+.navitems ul li:last-child a::after {
+    padding-left: 5px;
+    content:"\e901";
+    font-family: "icomoon";
 }
 
 .list {
@@ -72,14 +83,88 @@
     background-color: black;
 }
 .list_data {
+    display: inline-block;
     background-color: #fff;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .list_data ul li {
     float: left;
-    width: 200px;
+    width: 288px;
+    height: 430px;
     text-align: center;
+    margin-right: 16px;
+    border: 1px solid transparent;
+}
+
+.list_data ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.list_data ul li:hover {
+    border-color: #c81623;
+    box-shadow: 1px -1px 6px -1px #b1b1b1;
+}
+
+.text .price,
+.product_number {
+    height: 25px;
+    padding-top: 6px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.text .price>*,
+.product_number>*:nth-child(n) {
+    line-height: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 
+.price>*:first-child{
+    color: #c81623;
+}
+
+.price del {
+    color: #b1b1b1;
+}
+
+
+.product_number {
+    margin-bottom: 15px;
+}
+.product_number>* {
+    margin: 0 4px;
+}
+
+.product_number .bar {
+    position: relative;
+    width: 133px;
+    border-radius: 14px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.text .product_number .bar::after {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    right: 0px;
+    content: '';
+    border-radius: 0px 14px 14px 0px;
+    background-color: white;
+}
+
+.text .buying{
+    width: 100%;
+    height: 39px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
