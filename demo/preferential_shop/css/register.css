@@ -1,0 +1,73 @@
+.area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 85px;
+    border-bottom: 2px solid #b1191a;
+}
+
+header div {
+    padding-top: 10px;
+}
+
+.register_area {
+    height: 522px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+.register_area h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 41px;
+    padding: 0 10px;
+}
+
+.register_area h3 .login {
+    float: right;
+    font-size: 10px;
+}
+
+ .login a {
+    color: #b1191a;
+ }
+
+ .register_area form {
+    width: 600px;
+    margin: 50px auto 0px;
+}
+
+ .register_area form li {
+    background-color: #ececec;
+ }
+
+
+.register_area form label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.register_area form input {
+    height: 37px;
+    width: 242px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;;
+}
+
+.register_area form .news {
+    color: #c81523;
+}
+
+form .news .news_icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+footer {
+    background-color: blue;
+}
