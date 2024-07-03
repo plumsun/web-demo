@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?t0bejl');
-  src:  url('fonts/icomoon.eot?t0bejl#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?t0bejl') format('truetype'),
-    url('fonts/icomoon.woff?t0bejl') format('woff'),
-    url('fonts/icomoon.svg?t0bejl#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3im6qv');
+  src:  url('fonts/icomoon.eot?3im6qv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3im6qv') format('truetype'),
+    url('fonts/icomoon.woff?3im6qv') format('woff'),
+    url('fonts/icomoon.svg?3im6qv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check-circle:before {
+  content: "\e908";
+}
 .icon-1password:before {
   content: "\e905";
   color: #0094f5;
 }
 .icon-kickstarter:before {
   content: "\e900";
+}
+.icon-ifixit:before {
+  content: "\e907";
 }
 .icon-chevron-down:before {
   content: "\e901";
@@ -235,7 +241,4 @@
 }
 .icon-circle-left:before {
   content: "\ea44";
-}
-.icon-mobile:before {
-  content: "\e958";
 }

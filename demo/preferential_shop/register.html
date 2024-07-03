@@ -30,18 +30,49 @@
             <form action="#" method="get">
                 <ul>
                     <li>
-                        <label for="phone_number">用户名：</label>
-                        <input type="text" name="phone_number" id="phone_number" placeholder="请输入用户名" maxlength="10">
-                        <span class="news"><i class="news_icon"></i> 手机号格式不正确，请重新输入</span>
+                        <label for="phone_number">手机号：</label>
+                        <input type="text" name="phone_number" id="phone_number" placeholder="请输入手机号" maxlength="11">
+                        <span class="news"> 手机号格式不正确，请重新输入</span>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><label for="pwd">密码：</label>
+                        <input type="text" name="pwd" id="pwd" placeholder="请输入密码" maxlength="10">
+                        <span class="news"> 密码格式正确</span>
+                    </li>
+                    <li class="safe">
+                        安全程度：
+                        <em class="ruo">弱</em>
+                        <em class="zhong">中</em>
+                        <em class="qiang">强</em>
+                    </li>
+                    <li><label for="pwd_again">确认密码：</label>
+                        <input type="text" name="pwd_again" id="pwd_again" placeholder="请再次输入密码" maxlength="10">
+                        <span class="news"> 密码格式不正确，请重新输入</span>
+                    </li>
+                    <li><label for="captcha">短信验证码：</label>
+                        <input type="text" name="captcha" id="captcha" placeholder="请输入验证码" maxlength="10">
+                        <span class="news"> 短信验证码格式正确</span>
+                    </li>
+                    <li class="agree">
+                        <input type="checkbox" name="agree" id="agree" checked required>
+                        <label for="agree">同意协议并注册</label>
+                        <a href="#">《用户协议》</a>
+                    </li>
+                    <li>
+                        <input type="submit" value="完成注册" class="submit">
+                    </li>
                 </ul>
             </form>
         </div>
-        <footer>尾部</footer>
+        <footer><!-- 版权模块 -->
+            <div class="links"><a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">联系客服</a> | <a href="#">商家入驻</a>
+                | <a href="#">营销中心</a> | <a href="#">手机品优购</a> | <a href="#">友情链接</a> | <a href="#">销售联盟</a>
+                | <a href="#">品优购社区</a> |
+                <a href="#">品优购公益</a> | <a href="#">English Site</a>
+                | <a href="#">Contact U</a>
+            </div>
+            <div class="copyright">地址：xxxxxxxxxxxx 邮编：xxxxx 电话：xxxxxx 传真：xxxxxxx 邮箱: xxxxxxxx <br>
+                京ICP备xxxxx号京公网安备xxxxxxx</div>
+        </footer>
     </div>
 </body>
 
