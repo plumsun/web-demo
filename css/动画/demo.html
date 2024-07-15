@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        background-color: skyblue;
+        /* 调用动画 */
+        animation-name: identifier;
+        /* 使用动画 */
+        animation-duration: 1s;
+    }
+
+    @keyframes identifier {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        25% {
+            transform: translateX(100px);
+        }
+
+        50% {
+            transform: translate(100px, 100px);
+        }
+
+        75% {
+            transform: translate(0px, 100px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+</style>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>
