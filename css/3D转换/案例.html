@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+
+        perspective: 450px;
+    }
+
+    .box {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 100px auto;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+
+    .box:hover {
+        transform: rotateY(180deg);
+    }
+
+    .text1,
+    .text2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        line-height: 200px;
+        text-align: center;
+        backface-visibility: hidden;
+    }
+
+
+    .text1 {
+        background-color: blue;
+    }
+
+    .text2 {
+        background-color: green;
+        transform: rotateY(180deg);
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        <div class="text1">我爱你</div>
+        <div class="text2">假的</div>
+    </div>
+
+</body>
+
+</html>

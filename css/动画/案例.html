@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .map {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .test {
+        width: 10px;
+        height: 10px;
+        background-color: skyblue;
+        border-radius: 50%;
+    }
+
+    div[class^=pules] {
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 10px;
+        width: 10px;
+        box-shadow: 0 0 5px #09f;
+        border-radius: 50%;
+        animation: anmai 1s infinite linear;
+    }
+
+    .map .pules2 {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes anmai {
+
+        0% {}
+
+        50% {
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+        }
+
+        100% {
+            width: 60px;
+            height: 60px;
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="map">
+        <div class="test"></div>
+        <div class="pules1"></div>
+        <div class="pules2"></div>
+    </div>
+</body>
+
+</html>

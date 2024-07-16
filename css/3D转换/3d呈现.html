@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .father {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 100px auto;
+        perspective: 450px;
+        transition: all 2s;
+        transform-style: preserve-3d;
+    }
+
+    .father div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    }
+
+    .father div:last-child {
+        transform: rotateX(45deg);
+        background-color: skyblue;
+    }
+
+    .father:hover {
+        transform: rotateY(45deg);
+    }
+</style>
+
+
+<body>
+
+    <div class="father">
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>
