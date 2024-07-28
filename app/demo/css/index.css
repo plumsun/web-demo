@@ -1,0 +1,181 @@
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+        .container {
+            background-color: #fff;
+        }
+
+ul {
+    list-style-type: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a,a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+
+header,
+.news {
+    padding-left: 0 !important;
+}
+
+
+header .logo {
+    background-color: #579fdc;
+}
+
+header .logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header .logo span {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.nav a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+        article {
+            margin-top: 10px;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    .nav li a{
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .news li {
+        width: 50% !important;
+    }
+
+    .news li:first-child {
+        width: 100% !important;
+    }
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+
+.news li{
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.news li:first-child {
+    width: 50%;
+    height: 266px;
+}
+
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.news li a p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    width: 100%;
+    height: 41px;
+    padding: 5px 0 0 10px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.news li:first-child a p {
+    padding-top: 0;
+    line-height: 41px;
+    font-size: 20px;
+}
+
+.publish {
+    border-top: 1px solid #ccc;
+}
+.publish .row {
+    border-bottom: 1px solid #ccc;
+}
+
+.pic {
+    padding-top: 10px;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.hot {
+    margin-top: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 0 0 10px 20px;
+}
+
+
+.hot span {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
