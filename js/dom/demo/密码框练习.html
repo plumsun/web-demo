@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        p {
+            background-color: #fff;
+        }
+        
+        .warn {
+            background-color: red;
+        }
+        
+        .suc {
+            background-color: green;
+        }
+    </style>
+    <body>
+        <div class="register">
+            <input class="ipt" type="text" name="密码框" id="password">
+            <p>请输入密码</p>
+        </div>
+        <script>
+            let element = document.querySelector(".ipt");
+            let htmlParagraphElement = document.querySelector("p");
+            
+            element.onblur = function () {
+                let length = this.value.length;
+                if (length < 6 || length > 18) {
+                    htmlParagraphElement.classList.remove("suc");
+                    htmlParagraphElement.classList.add("warn");
+                } else {
+                    htmlParagraphElement.classList.remove("warn");
+                    htmlParagraphElement.classList.add("suc");
+                }
+            }
+        </script>
+    </body>
+</html>

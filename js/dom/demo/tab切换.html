@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+            
+        }
+        
+        .tab {
+            margin: 0 auto;
+            width: 300px;
+            background-color: red;
+        }
+        
+        .tab ul {
+            width: 100%;
+        }
+        
+        .tab_head li {
+            float: left;
+            height: 30px;
+            width: 20%;
+            color: #eeeeee;
+            background-color: blue;
+            
+        }
+        
+        .tab_content li {
+            float: left;
+            height: 30px;
+            width: 20%;
+            color: #eeeeee;
+            background-color: green;
+            display: none;
+        }
+    </style>
+    <body>
+        <div class="tab">
+            <div class="tab_head">
+                <ul>
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                </ul>
+            </div>
+            <div class="tab_content">
+                <ul>
+                    <li style="display: block"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            let headNodeList = document.querySelector(".tab_head").querySelectorAll("li");
+            let contentNodeList = document.querySelector(".tab_content").querySelectorAll("li");
+            
+            function getOnclick(i) {
+                for (let contentNodeListElement of contentNodeList) {
+                    contentNodeListElement.style.display = "none";
+                }
+                contentNodeList[i].style.display = "block";
+            }
+            
+            for (let i = 0; i < headNodeList.length; i++) {
+                headNodeList[i].onclick = () => {
+                    getOnclick(i)
+                };
+            }
+        </script>
+    </body>
+</html>

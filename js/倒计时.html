@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script>
+        var beforeDate = new Date(2024, 7, 12, 20);
+        
+        function countDown(beforeDate) {
+            var now = Date.now();
+            return parseInt((beforeDate - now) / 1000 / 60);
+        }
+        
+        console.log(countDown(beforeDate));
+    </script>
+    <body>
+    </body>
+</html>

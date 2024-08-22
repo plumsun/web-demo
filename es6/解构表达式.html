@@ -9,44 +9,41 @@
 </head>
 
 <body>
-    <script>
-        let arr = [1, 2, 3];
-        let a = arr[0];
-        let b = arr[1];
-        let c = arr[2];
+<script>
+    let arr = [1, 2, 3];
+    let a = arr[0];
+    let b = arr[1];
+    let c = arr[2];
 
-        console.log(a, b, c);
-        // 数组解构
-        let [q, w, e] = arr;
-        console.log(q, w, e);
-
-
-        // 对象解构
-        const person = {
-            name: "test",
-            age: 21,
-            language: ["js", "java", "css"]
-        }
-        const name = person.name;
-        const age = person.age;
-        const language = person.language;
-        console.log("旧版方式：" + name, age, language);
+    console.log(a, b, c);
+    // 数组解构
+    let [q, w, e] = arr;
+    console.log(q, w, e);
 
 
-        
-        const person2 = {
-            name1: "demo",
-            age1: 22,
-            language1: ["sql", "java", "css"]
-        }
-        // 使用对象解构{}中的属性名要和对象中的属性名一致
-        const { name1: abc/*别名*/, age1, language1 } = person2;
-        console.log("对象解构：" + abc, age1, language1);
+    // 对象解构
+    const person = {
+        name: "test",
+        age: 21,
+        language: ["js", "java", "css"]
+    }
+    const name = person.name;
+    const age = person.age;
+    const language = person.language;
+    console.log("旧版方式：" + name, age, language);
 
 
+    const person2 = {
+        name1: "demo",
+        age1: 22,
+        language1: ["sql", "java", "css"]
+    }
+    // 使用对象解构{}中的属性名要和对象中的属性名一致
+    const {name1: abc/*别名*/, age1, language1} = person2;
+    console.log("对象解构：" + abc, age1, language1);
 
-    </script>
 
+</script>
 
 
 </body>

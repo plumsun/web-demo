@@ -14,13 +14,16 @@ a {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 input {
     -webkit-appearance: none;
 }
+
 img,
 a {
     -webkit-touch-callout: none;
 }
+
 img {
     vertical-align: top;
 }
@@ -42,9 +45,11 @@ header li {
     text-align: center;
     line-height: 45px;
 }
+
 header li:nth-child(1) {
     width: 8%;
 }
+
 header li:nth-child(1) img {
     width: 10px;
     padding-top: 50%;
@@ -64,6 +69,7 @@ header li:nth-child(3) {
     width: 57%;
     color: white;
 }
+
 header li:nth-child(4) {
     width: 25%;
     background-color: #F63515;
@@ -162,6 +168,7 @@ header li:nth-child(4) {
 .slider img {
     width: 100%;
 }
+
 .brand {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -171,6 +178,7 @@ header li:nth-child(4) {
     float: left;
     width: 33.3%;
 }
+
 .brand div img {
     width: 100%;
 }
@@ -198,6 +206,7 @@ header li:nth-child(4) {
 .news img {
     width: 100%;
 }
+
 .news a {
     float: left;
     box-sizing: border-box;
@@ -206,6 +215,7 @@ header li:nth-child(4) {
 .news a:nth-child(1) {
     width: 50%;
 }
+
 .news a:nth-child(n+2) {
     width: 25%;
     border-left: 1px solid #ccc;

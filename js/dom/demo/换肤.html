@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        .bgc {
+            float: left;
+        }
+        
+        .bgc1 {
+            height: 20px;
+            width: 20px;
+            background-color: blue;
+        }
+        
+        .bgc2 {
+            height: 20px;
+            width: 20px;
+            background-color: #000000;
+        }
+    </style>
+    <body>
+        <ul class="bgc">
+            <li class="bgc1"></li>
+            <li class="bgc2"></li>
+        </ul>
+        <script>
+            let fatherEle = document.body;
+            let clickVar = function () {
+                fatherEle.style.backgroundColor = getComputedStyle(this).backgroundColor;
+            }
+            for (const nodeListOfElement of fatherEle.querySelectorAll("li")) {
+                nodeListOfElement.onclick = clickVar;
+            }
+        </script>
+    </body>
+</html>

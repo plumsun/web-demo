@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <script>
+            let nodeListOf = document.querySelectorAll("button");
+            let clickVar = function () {
+                for (const nodeListOfElement of nodeListOf) {
+                    nodeListOfElement.style.backgroundColor = "";
+                }
+                this.style.backgroundColor = "blue";
+            };
+            for (const node of nodeListOf) {
+                node.onclick = clickVar;
+            }
+        </script>
+    </body>
+</html>
