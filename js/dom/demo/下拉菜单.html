@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+            
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .nav {
+            margin: 0 auto;
+            width: 300px;
+        }
+        
+        .nav > li {
+            float: left;
+            height: 30px;
+            width: 20%;
+            color: #eeeeee;
+            text-align: center;
+            background-color: yellowgreen;
+            border: 1px solid #eeeeee;
+        }
+        
+        .nav > li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .list {
+            display: none;
+        }
+        
+        .list li {
+            background-color: #eeeeee;
+            color: #0f0f0f;
+            border: 1px solid #fff;
+        }
+    
+    </style>
+    <body>
+        <ul class="nav">
+            <li>
+                <a href="">菜单1</a>
+                <ul class="list">
+                    <li>私信</li>
+                    <li>评论</li>
+                    <li>@我</li>
+                </ul>
+            </li>
+            <li><a href="">菜单1</a>
+                <ul class="list">
+                    <li>私信</li>
+                    <li>评论</li>
+                    <li>@我</li>
+                </ul>
+            </li>
+            <li><a href="">菜单1</a>
+                <ul class="list">
+                    <li>私信</li>
+                    <li>评论</li>
+                    <li>@我</li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            let navElement = document.querySelector(".nav");
+            let childrenList = navElement.children;
+            for (let childrenListElement of childrenList) {
+                childrenListElement.firstElementChild.onmouseover = () => {
+                    for (let childrenListElement1 of childrenList) {
+                        childrenListElement1.querySelector(".list").style.display = "none";
+                    }
+                    childrenListElement.querySelector(".list").style.display = "block";
+                }
+                childrenListElement.firstElementChild.onmouseout = () => {
+                    childrenListElement.querySelector(".list").style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

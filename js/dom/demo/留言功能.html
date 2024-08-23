@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        li {
+            list-style: none;
+            background-color: lightblue;
+            color: #0f0f0f;
+        }
+    </style>
+    <body>
+        <div>
+            <textarea type="text" name="" id=""></textarea>
+            <button>发布</button>
+            <ul>
+            </ul>
+        </div>
+        <script>
+            let htmlTextAreaElement = document.querySelector("textarea");
+            let buttonElement = document.querySelector("button");
+            let ulEle = document.querySelector("ul");
+            buttonElement.onclick = click;
+            
+            function click() {
+                let text = htmlTextAreaElement.value;
+                console.log(text);
+                if (!(text === "" || text.length === 0)) {
+                    console.log(text);
+                    let liElement = document.createElement("li");
+                    liElement.innerText = text;
+                    console.dir(liElement);
+                    ulEle.insertBefore(liElement, ulEle.firstElementChild);
+                }
+            }
+        </script>
+    </body>
+</html>

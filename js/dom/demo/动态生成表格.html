@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        table {
+            margin: 0 auto;
+            border-spacing: inherit;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        thead tr {
+            display: inline-block;
+            width: 500px;
+            height: 50px;
+            background-color: #e6e6e6;
+        }
+        
+        th {
+            float: left;
+            width: 25%;
+            border: 1px solid #000000;
+            text-align: center;
+            border-left: none;
+        }
+        
+        tr th:first-child {
+            border-left: 1px solid #000;
+        }
+        
+        thead th {
+            height: 100%;
+            line-height: 50px;
+        }
+        
+        tbody th {
+            border-top: none;
+        }
+    </style>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>科目</th>
+                    <th>成绩</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script>
+            let data =
+                    [{
+                        name: "张三",
+                        subject: "JS",
+                        score: 20
+                    }, {
+                        name: "李四",
+                        subject: "Java",
+                        score: 12
+                    }];
+            let tableSectionElement = document.querySelector("tbody");
+            
+            if (!(data.length === 0)) {
+                for (let datum of data) {
+                    let element = document.createElement("tr");
+                    tableSectionElement.appendChild(element);
+                    for (let datumKey in datum) {
+                        let thEle = document.createElement("th");
+                        thEle.innerHTML = datum[datumKey];
+                        element.appendChild(thEle);
+                    }
+                    let thEle = document.createElement("th");
+                    thEle.innerHTML = "<a href='javascript:;'>删除</a>";
+                    element.appendChild(thEle);
+                }
+            }
+            for (let nodeListOfElement of document.querySelectorAll("a")) {
+                nodeListOfElement.onclick = function () {
+                    tableSectionElement.removeChild(this.parentNode.parentNode);
+                }
+            }
+        </script>
+    </body>
+</html>
