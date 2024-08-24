@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <input type="text" name="" id="">
+        <button>发送</button>
+        <script>
+            let buttonElement = document.querySelector("button");
+            buttonElement.addEventListener("click", () => {
+                let num = 3;
+                
+                let downCont = setInterval(() => {
+                    if (num >= 0) {
+                        buttonElement.disabled = true;
+                        buttonElement.innerHTML = num-- + "s后重新发送";
+                    } else {
+                        clearInterval(downCont);
+                        buttonElement.disabled = false;
+                        buttonElement.innerHTML = "发送";
+                    }
+                }, 1000)
+            })
+        </script>
+    </body>
+</html>

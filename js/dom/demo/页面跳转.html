@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <button>点击</button>
+        <div></div>
+        <script>
+            let buttonElement = document.querySelector("button");
+            let divElement = document.querySelector("div");
+            buttonElement.addEventListener("click", () => {
+                let num = 5;
+                let downCont = setInterval(() => {
+                    if (num < 0) {
+                        clearInterval(downCont);
+                        location.href = "https://www.bilibili.com/";
+                    } else {
+                        divElement.innerHTML = num-- + "s之后跳转到首页";
+                    }
+                }, 1000)
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        div {
+            float: left;
+            height: 50px;
+            width: 50px;
+            background-color: #000;
+            color: #ffffff;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+    <body>
+        <div class="hours"></div>
+        <div class="minutes"></div>
+        <div class="seconds"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", contDown);
+            
+            let hoursEle = document.querySelector(".hours");
+            let minEle = document.querySelector(".minutes");
+            let secEle = document.querySelector(".seconds");
+            
+            let time = +new Date("2024-8-24 17:00:00");
+            
+            function contDown() {
+                let nowDate = +new Date();
+                let number = (time - nowDate) / 1000;
+                let h = number / 60 / 60 % 24;
+                let m = number / 60 % 60;
+                let s = number % 60;
+                
+                hoursEle.innerText = Math.floor(h);
+                minEle.innerText = Math.floor(m);
+                secEle.innerText = Math.floor(s);
+            }
+            
+            let countdown = setInterval(contDown, 1000);
+        </script>
+    </body>
+</html>

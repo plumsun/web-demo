@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div></div>
+        <script>
+            let divElement = document.querySelector("div");
+            let strings = location.search.replaceAll("?", "").split("=");
+            if (strings[1] !== "") {
+                divElement.innerText = strings[1] + ",hello";
+            }
+        </script>
+    </body>
+</html>
