@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .carousel {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            background-color: #e6e6e6;
+        }
+        
+        .list-img ul {
+            position: absolute;
+            top: 0;
+            height: 200px;
+            width: 1000px;
+            overflow: hidden;
+        }
+        
+        .list-img li {
+            height: 200px;
+            float: left;
+            width: 20%;
+        }
+        
+        .list-img li img {
+            width: 100%;
+        }
+        
+        .right-bar,.left-bar {
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-top-color: rgba(0,0,0,.3);
+            transform: translateY(-50%);
+        }
+        
+        .right-bar {
+            right: -10px;
+            z-index: 10;
+        }
+        
+        .right-bar {
+            display: none;
+            transform:  rotate(-90deg);
+        }
+        
+        .left-bar {
+            display: none;
+            left: -10px;
+            z-index: 10;
+            transform:  rotate(90deg);
+        }
+    </style>
+    <body>
+        <div class="carousel">
+            <div class="left-bar">
+            </div>
+            <div class="list-img">
+                <ul>
+                </ul>
+            </div>
+            <div class="list-bar"></div>
+            <div class="right-bar">
+            </div>
+        </div>
+    </body>
+    <script type="module" src="script/invoke.js"></script>
+</html>

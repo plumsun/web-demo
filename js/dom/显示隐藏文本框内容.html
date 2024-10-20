@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        input {
-            display: block;
-            width: 200px;
-            height: 30px;
-            margin: 0 auto;
-            border: 1px solid #eee;
-            background-color: #fff;
-            color: #999;
-            outline: none;
-        }
-    </style>
-    
-    <body>
-        
-        <input type="text" value="search">
-        <script>
-            const defaultValue = "search";
-            var input = document.querySelector("input");
-            input.onfocus = function () {
-                if (this.value.trim() == defaultValue) {
-                    this.value = null;
-                    this.style.color = "#000";
-                }
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        display: block;
+        width: 200px;
+        height: 30px;
+        margin: 0 auto;
+        border: 1px solid #eee;
+        background-color: #fff;
+        color: #999;
+        outline: none;
+    }
+</style>
+
+<body>
+
+    <input type="text" value="search">
+    <script>
+        const defaultValue = "search";
+        var input = document.querySelector("input");
+        input.onfocus = function () {
+            if (this.value.trim() == defaultValue) {
+                this.value = null;
+                this.style.color = "#000";
             }
-            
-            input.onblur = function () {
-                var valueStr = this.value;
-                if (valueStr == "" || valueStr.length == 0) {
-                    this.value = defaultValue;
-                    this.style.color = "#999";
-                }
+        }
+
+        input.onblur = function () {
+            var valueStr = this.value;
+            if (valueStr == "" || valueStr.length == 0) {
+                this.value = defaultValue;
+                this.style.color = "#999";
             }
-        
-        </script>
-    </body>
+        }
+
+    </script>
+</body>
 
 </html>

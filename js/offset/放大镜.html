@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .raw {
+            position: relative;
+            float: left;
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 300px;
+            height: 350px;
+            border: 1px solid #000000;
+            overflow: hidden;
+        }
+        
+        .magnify {
+            position: relative;
+            float: left;
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 400px;
+            height: 450px;
+            border: 1px solid #000000;
+            overflow: hidden;
+        }
+        
+        .magnify-test {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 150px;
+            width: 100px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        
+        .raw img {
+            width: 100%;
+        }
+    </style>
+    <body>
+        <div class="raw">
+            <img src="img/iphone.png" alt="">
+            <div class="magnify-test"></div>
+        </div>
+        
+        <div class="magnify">
+            <img src="img/iphone.png" alt="">
+        </div>
+    </body>
+    
+    <script !src="">
+        let magnifyTest = document.querySelector(".magnify-test");
+        let raw = document.querySelector(".raw");
+        
+        function getListener(e) {
+            let mouseTop = e.pageY - raw.offsetTop;
+            let mouseLeft = e.pageX - raw.offsetLeft;
+            
+            if ((raw.offsetHeight - mouseTop) < (magnifyTest.offsetHeight / 2)) {
+                mouseTop = raw.offsetHeight - magnifyTest.offsetHeight;
+            } else if (mouseTop < (magnifyTest.offsetHeight / 2)) {
+                mouseTop = 0;
+            } else {
+                mouseTop -= (magnifyTest.offsetHeight / 2);
+            }
+            if ((raw.offsetWidth - mouseLeft) < (magnifyTest.offsetWidth / 2)) {
+                mouseLeft = raw.offsetWidth - magnifyTest.offsetWidth;
+            } else if (mouseLeft < (magnifyTest.offsetWidth / 2)) {
+                mouseLeft = 0;
+            } else {
+                mouseLeft -= (magnifyTest.offsetWidth / 2);
+            }
+            magnifyTest.style.top = mouseTop + 'px';
+            magnifyTest.style.left = mouseLeft + 'px';
+            
+        }
+        
+        raw.addEventListener("mousemove", getListener)
+        magnifyTest.addEventListener("mouseout", () => {
+            document.removeEventListener("mousemove", getListener);
+        });
+    </script>
+</html>

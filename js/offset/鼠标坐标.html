@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <style>
+        .test {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+    </style>
+    
+    <body>
+        <div class="test"></div>
+        <script>
+            let test = document.querySelector(".test");
+            let offsetTop = test.offsetTop;
+            let offsetLeft = test.offsetLeft;
+            console.log(offsetTop + "" + offsetLeft);
+            test.addEventListener("mousemove", (e) => {
+                console.log("页面中坐标：" + e.pageX + "," + e.pageY);
+                console.log("图像中坐标：" + (e.pageX - offsetLeft) + "," + (e.pageY - offsetTop));
+            });
+        </script>
+    </body>
+
+</html>

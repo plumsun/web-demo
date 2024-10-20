@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .lg {
+            z-index: 0;
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        .login {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .test_text {
+            z-index: 1;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            padding: 10px;
+            transform: translate(-50%, -50%);
+            background-color: skyblue;
+        }
+        
+        .test_text:hover {
+            cursor: move;
+        }
+        
+        .test_text .cancel {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            color: white;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 8px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        
+        .cancel:hover {
+            cursor: default;
+        }
+        
+        form li {
+            width: 100%;
+            height: 33%;
+            line-height: 33.33px;
+        }
+        
+        li input {
+            float: right;
+            width: 60%;
+            height: 33.33px;
+            margin-right: 10%;
+            line-height: 33.33px;
+        }
+        
+        li label {
+            width: 20%;
+            height: 100%;
+            text-align: right;
+        }
+        
+        li:last-child {
+            text-align: center;
+        }
+        
+        .submit {
+            margin: 10px 0 0 10px;
+            float: none;
+        }
+    
+    
+    </style>
+    
+    <body>
+        <div class="login">
+            <a href="#">点击，登录</a>
+        </div>
+        <div class="test_text">
+            <form action="get">
+                <form action="#" method="get">
+                    <ul>
+                        <li>
+                            <label for="phone_number">用户名：</label>
+                            <input type="text" name="phone_number" id="phone_number" placeholder="请输入用户名"
+                                   maxlength="11">
+                        </li>
+                        <li><label for="pwd">密码：</label>
+                            <input type="text" name="pwd" id="pwd" placeholder="请输入密码" maxlength="10">
+                        </li>
+                        <li>
+                            <input type="submit" value="登录" class="submit">
+                        </li>
+                    </ul>
+                </form>
+            </form>
+            <div class="cancel">关闭</div>
+        </div>
+        <div class="lg"></div>
+    </body>
+    
+    
+    <script>
+        
+        console.log(window.innerWidth);
+        
+        let login = document.querySelector(".login");
+        let test = document.querySelector(".test_text");
+        let cancel = document.querySelector(".cancel");
+        let lg = document.querySelector(".lg");
+        login.addEventListener("click", () => {
+            test.style.display = "block";
+            lg.style.display = "block";
+        });
+        
+        cancel.addEventListener("click", () => {
+            test.style.display = "none";
+            lg.style.display = "none";
+        });
+        
+        test.addEventListener("mousedown", (e) => {
+            let x = e.pageX - test.offsetLeft;
+            let y = e.pageY - test.offsetTop;
+            
+            function getListener(ev) {
+                test.style.left = (ev.pageX - x) + 'px';
+                test.style.top = (ev.pageY - y) + 'px';
+            }
+            
+            document.addEventListener("mousemove", getListener);
+            test.addEventListener("mouseup", () => {
+                document.removeEventListener("mousemove", getListener);
+            });
+        })
+    
+    
+    </script>
+
+</html>
